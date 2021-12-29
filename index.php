@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>query </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
+    <style> 
+     /*  form{ 
+        background-color: red;
+      } */
+  </style>
+
+  </head>
 <body>
         <?php  
             if(isset($_GET['submitbtn'])){ 
@@ -42,8 +48,9 @@
         
         ?>
 
-<form class="w-50 offset-5" action="<?php  echo $_SERVER['PHP_SELF']?>" method="GET">
-  <div class="mb-3">
+<form class="w-50 offset-3" action="<?php  echo $_SERVER['PHP_SELF']?>" method="POST">
+            <h1 class="text-center">Resistration form</h1>
+<div class="mb-3">
     <label for="name" class="form-label">name</label>
     <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
